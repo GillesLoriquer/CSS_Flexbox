@@ -1,0 +1,99 @@
+html {
+	background-image: url("images/concrete-texture.png");
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	max-width: 1000px;
+	margin: auto;
+	min-height: calc(100vh - 100px);
+	display: flex;
+	flex-direction: column;
+}
+
+header .logophoto {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 800;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logophoto img {
+	height: 100px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: #919191;
+	border-width: 1px;
+}
+
+header .logophoto a {
+	text-decoration: none;
+}
+
+header .logophoto span {
+	color: red;
+}
+
+nav {
+	font-size: 16px;
+	border-style: solid;
+	border-color: #919191;
+	border-width: 1px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a:link, a:visited {
+	font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover, a:active {
+    text-decoration: none;
+    font-weight: 800;
+    color: red;
+}
+
+.main {
+	/*background-color: honeydew;*/
+	display: flex;
+	flex-grow: 1;
+}
+
+section {
+	/*background-color: pink;*/
+	flex-grow: 1;
+}
+
+aside {
+	/*background-color: lightblue;*/
+	width: 80px;
+	order: -1;
+}
+
+footer {
+	/*background-color: #999;*/
+	text-align: center;
+}
+
+@media (max-width: 640px) {
+	nav {
+		flex-direction: column;
+	}
+
+	.main {
+		flex-direction: column;
+	}
+
+	.logophoto {
+		flex-direction: column;
+	}
+
+	aside {
+		width: auto;
+	}
+}
